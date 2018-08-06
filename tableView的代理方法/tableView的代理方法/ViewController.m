@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     /**
-     如果不在cellForRowAtIndexPath方法中撰写创建新cell的代码的话就应该在此处撰写相关的代码，提示系统如果在缓存池中找不到具有相同标识符的cell的话就应该创建新的cell。
+     如果不在cellForRowAtIndexPath方法中撰写创建新的原生的cell的代码的话就应该在此处撰写相关的注册代码，提示系统如果在缓存池中找不到具有相同标识符的cell的话就应该创建新的原生的cell。
      */
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
